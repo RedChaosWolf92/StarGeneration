@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://eel4d8x78pbl"]
+
+[ext_resource type="Script" path="res://WhiteDwarf.gd" id="1_7ybyr"]
+[ext_resource type="Texture2D" uid="uid://be0730ijj8253" path="res://icon.svg" id="2_2x6fx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bcfpy"]
+size = Vector2(130, 130)
+
+[node name="WhiteDwarf" type="StaticBody2D"]
+script = ExtResource("1_7ybyr")
+metadata/_edit_group_ = true
+
+[node name="White" type="Sprite2D" parent="."]
+texture = ExtResource("2_2x6fx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bcfpy")

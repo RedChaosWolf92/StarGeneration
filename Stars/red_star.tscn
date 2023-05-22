@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcfvxfpnhg82h"]
+
+[ext_resource type="Texture2D" uid="uid://be0730ijj8253" path="res://icon.svg" id="1_byp1c"]
+[ext_resource type="Script" path="res://red_star.gd" id="1_cp5tf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mogod"]
+size = Vector2(130, 130)
+
+[node name="RedStar" type="StaticBody2D"]
+script = ExtResource("1_cp5tf")
+metadata/_edit_group_ = true
+
+[node name="Red" type="Sprite2D" parent="."]
+texture = ExtResource("1_byp1c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mogod")

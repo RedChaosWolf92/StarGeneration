@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://drm160l7adm22"]
+
+[ext_resource type="Script" path="res://BlueStar.gd" id="1_ge8te"]
+[ext_resource type="Texture2D" uid="uid://be0730ijj8253" path="res://icon.svg" id="2_c6xnx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_64fmm"]
+size = Vector2(130, 130)
+
+[node name="BlueStar" type="StaticBody2D"]
+script = ExtResource("1_ge8te")
+metadata/_edit_group_ = true
+
+[node name="Blue" type="Sprite2D" parent="."]
+texture = ExtResource("2_c6xnx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_64fmm")
